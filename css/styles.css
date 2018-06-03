@@ -105,7 +105,7 @@ input[type="search"]{
     font-size: 1em;
     border-bottom: solid 2px rgba(65, 144, 200,0.2);;
 }
-#shipping-adress-text{
+#shipping-address-text{
     font-size: 1.8em;
     margin: 50px;
 }
@@ -179,7 +179,7 @@ input[type="search"]{
     right: 250px;
 
 }
-#costumer-name-before{
+#customer-name-before{
     margin-left: 0%;
 }
 #ordered-date-before{
@@ -197,10 +197,10 @@ input[type="search"]{
 
     margin-left: 30%;
 }
-#shipper-adress-city-before{
+#shipper-address-city-before{
     margin-left: 30%;
 }
-#shipper-adress-sttreet-before{
+#shipper-address-street-before{
 
     margin-left: 30%;
 }
