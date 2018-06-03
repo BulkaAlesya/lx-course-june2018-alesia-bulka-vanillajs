@@ -7,7 +7,18 @@
 </head>
 <body>
     <div id="content">
-        <div id="select-block">
+        <div id="master-block">
+            <div id="sroll-header">
+                <a  class="prev-page-button" href=""><img src="img/left-arrow.png" height="20" width="20"/></a>
+                <h4 class="header-title">Orders(10)</h4>
+                <form class="search-form">
+                    <div>
+                        <input  type="search"  placeholder="Поиск">
+                        <div class="button"> <img src="img/search-icon-png-18.png" height="20" width="20"/></div>
+                        <div class="button"> <img src="img/Refresh.png" height="20" width="20"/></div>
+                    </div>
+                </form>
+            </div>
             <div id="scroll">
                 <div class="card-block">
                     <div class="card-order-number">Order 7991</div>
@@ -17,52 +28,42 @@
                     <div class="card-order-shipped">25 ноябрь 2016</div>
                 </div>
                 <div class="card-block">
-                    <div class="card-order-number">Order 7991</div>
-                    <div class="card-order-date"> 21.11.2016</div>
+                    <div class="card-order-number">Order 7918</div>
+                    <div class="card-order-date"> 18.09.2016</div>
+                    <div class="card-order-status">Urgent</div>
+                    <div class="card-order-shipper">Tortuga Restautante</div>
+                    <div class="card-order-shipped">25 cентябрь 2016</div>
+                </div>
+                <div class="card-block">
+                    <div class="card-order-number">Order 7375</div>
+                    <div class="card-order-date"> 06.10.2016</div>
                     <div class="card-order-status">In time</div>
-                    <div class="card-order-shipper">Oвоавли Pвиы</div>
+                    <div class="card-order-shipper">Alfreds Futterkiste</div>
                     <div class="card-order-shipped">25 ноябрь 2016</div>
                 </div>
                 <div class="card-block">
-                    <div class="card-order-number">Order 7991</div>
-                    <div class="card-order-date"> 21.11.2016</div>
+                    <div class="card-order-number">Order 6368</div>
+                    <div class="card-order-date"> 13.11.2016</div>
                     <div class="card-order-status">In time</div>
-                    <div class="card-order-shipper">Oвоавли Pвиы</div>
-                    <div class="card-order-shipped">25 ноябрь 2016</div>
+                    <div class="card-order-shipper">Alfreds Futterkiste</div>
+                    <div class="card-order-shipped">19 ноябрь 2016</div>
                 </div>
                 <div class="card-block">
-                    <div class="card-order-number">Order 7991</div>
-                    <div class="card-order-date"> 21.11.2016</div>
+                    <div class="card-order-number">Order 6189</div>
+                    <div class="card-order-date"> 28.11.2016</div>
                     <div class="card-order-status">In time</div>
-                    <div class="card-order-shipper">Oвоавли Pвиы</div>
-                    <div class="card-order-shipped">25 ноябрь 2016</div>
+                    <div class="card-order-shipper">Alfreds Futterkiste</div>
+                    <div class="card-order-shipped">19 ноябрь 2016</div>
                 </div>
                 <div class="card-block">
-                    <div class="card-order-number">Order 7991</div>
+                    <div class="card-order-number">Order 7591</div>
                     <div class="card-order-date"> 21.11.2016</div>
                     <div class="card-order-status">In time</div>
-                    <div class="card-order-shipper">Oвоавли Pвиы</div>
-                    <div class="card-order-shipped">25 ноябрь 2016</div>
-                </div>
-                <div class="card-block">
-                    <div class="card-order-number">Order 7991</div>
-                    <div class="card-order-date"> 21.11.2016</div>
-                    <div class="card-order-status">In time</div>
-                    <div class="card-order-shipper">Oвоавли Pвиы</div>
+                    <div class="card-order-shipper">Alfreds Futterkiste</div>
                     <div class="card-order-shipped">25 ноябрь 2016</div>
                 </div>
         </div>
-            <div id="heat">
-                <a href=""><img src="img/left-arrow.png" height="20" width="20"/></a>
-                <h4>Orders(10)</h4>
-                <form >
-                    <div>
-                    <input  type="search" name="q" placeholder="Поиск">
-                    <div class="button"> <img src="img/search-icon-png-18.png" height="20" width="20"/></div>
-                    <div class="button"> <img src="img/Refresh.png" height="20" width="20"/></div>
-                    </div>
-                </form>
-            </div>
+
         </div>
         <div id="central-block">
             <div id="central-heat">
@@ -70,73 +71,88 @@
                 <div id="order-number"> Order 7918</div>
                 <div id="order-price">150 935.13</div>
                 <div id="order-currency">EUR</div>
-                <div class="order-data" id="costumer-name">Tourtuga Restaurante</div>
-                <div class="order-data" id="ordered-date"> 18 сентября 2016г.</div>
-                <div class="order-data" id="shippeed-date"> 26 сентября 2016г</div>
+                <div class="order-data">
+                    <span id="costumer-name-before">Costomer: </span><span id="costumer-name">Tourtuga Restaurante</span>
+                </div>
+                <div class="order-data">
+                    <span id="ordered-date-before">Ordered: </span>
+                    <span id="ordered-date"> 18 сентября 2016г.</span></div>
+                <div class="order-data">
+                    <span id="shippeed-date-before">Shipped: </span><span id="shippeed-date"> 26 сентября 2016г</span>
+                </div>
                 <div style="display: inline-block">
                     <div class="circle-icon">
-                    <img id="truck-icon" src="img/truck.png" height="40" width="40"/>
+                    <img id="truck-icon" src="img/truck.png"/>
                     </div>
                 </div>
                 <div style="display: inline-block; z-index: 1000">
                     <div class="circle-icon">
-                    <img id="user-icon" src="img/user-icon.png" height="40" width="40"/>
+                    <img id="user-icon" src="img/user-icon.png"/>
                     </div>
                 </div>
 
             </div>
             <span id="shipping-adress-text">Shipping adress</span>
             <div id="central-middle">
-                <p class="central-middle-text" id="shipper-name"></p>
-                <p class="central-middle-text" id="shipper-adress-sttreet"></p>
-                <p class="central-middle-text" id="shipper-adress-city"></p>
-                <p class="central-middle-text" id="shipper-region"></p>
-                <p class="central-middle-text" id="shipper-country"></p>
+                <div>
+                <span class="central-middle-text" id="shipper-name-before"> Name:</span>
+                <span class="central-middle-text" >ExcellentParsel
+                </div>
+                <span class="central-middle-text" id="shipper-adress-sttreet-before"> Street: </span>
+                <span class="central-middle-text">Tottenham Court Road</span>
+               <div> <span class="central-middle-text" id="shipper-adress-city-before">ZIP Code/ City: </span>
+                <span class="central-middle-text">N170AA London</span>
+               </div>
+                <span class="central-middle-text" id="shipper-region-before">Region: </span>
+                <span class="central-middle-text">Greater London</span>
+                <div><span class="central-middle-text" id="shipper-country-before">Country: </span>
+                <span class="central-middle-text"> United Kingdom</span>
+                </div>
             </div>
             <div id="table">
                 <p id="line-item">Line item(4)</p>
-                <table>
+                <table class="product-table">
                     <tr>
-                        <th>Product</th>
-                        <th>Unit Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
+                        <th class="product-table-head">Product</th>
+                        <th class="product-table-head">Unit Price</th>
+                        <th class="product-table-head">Quantity</th>
+                        <th class="product-table-head">Total</th>
                     </tr>
                     <tr>
-                        <td>qeqweqweqweqw <br> 45222</td>
-                        <td>45</td>
-                        <td>41212</td>
-                        <td>12121</td>
+                        <td class="product-table-column"><strong>Aniseed Syrup</strong> <br> 1412</td>
+                        <td class="product-table-column"><strong>65.89</strong> EUR</td>
+                        <td class="product-table-column">899</td>
+                        <td class="product-table-column"><strong>59.235,11</strong> EUR</td>
                     </tr>
                     <tr>
-                        <td>qeqweqweqweqw <br> 45222</td>
-                        <td>45</td>
-                        <td>41212</td>
-                        <td>12121</td>
+                        <td class="product-table-column"><strong>Tunnbrod</strong> <br> 5672</td>
+                        <td class="product-table-column"><strong>14.77</strong> EUR</td>
+                        <td class="product-table-column">2367</td>
+                        <td class="product-table-column"><strong>34 960,59</strong> EUR</td>
                     </tr>
                     <tr>
-                        <td>qeqweqweqweqw <br> 45222</td>
-                        <td>45</td>
-                        <td>41212</td>
-                        <td>12121</td>
+                        <td class="product-table-column"><strong>Notrhwoods Cranberry Sauce</strong> <br> 5046</td>
+                        <td class="product-table-column"><strong>61.69</strong> EUR</td>
+                        <td class="product-table-column">687</td>
+                        <td class="product-table-column"><strong>53 960,59</strong> EUR</td>
                     </tr>
 
                     <tr>
-                        <td>qeqweqweqweqw <br> 45222</td>
-                        <td>45</td>
-                        <td>41212</td>
-                        <td>12121</td>
+                        <td class="product-table-column"><strong>Camembert </strong> <br> 9505</td>
+                        <td class="product-table-column"><strong>3.07 </strong>EUR</td>
+                        <td class="product-table-column">1060</td>
+                        <td class="product-table-column"><strong>3 254,20</strong> EUR</td>
                     </tr>
                 </table>
             </div>
         </div>
-        <footer>
-            <div style="width: 25%;height: 100%; border-right: solid 3px #d2d2d2;">
-                <img class="mail-image" src="img/mail.png" height="30" width="30"/>
+        <footer class="main-footer">
+            <div class="scroll-footer">
+                <img class="mail-image" src="img/mail.png"/>
             </div>
             <div>
-            <img class="filter-image" src="img/filter-icon.png" height="30" width="30"/>
-            <img class="sort-image" src="img/sort_grey_192x192.png" height="30" width="30"/>
+            <img class="filter-image" src="img/filter-icon.png" />
+            <img class="sort-image" src="img/sort_grey_192x192.png"/>
             </div>
         </footer>
     </div>
